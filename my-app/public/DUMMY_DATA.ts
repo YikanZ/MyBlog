@@ -11,7 +11,7 @@ export const DUMMY_POSTS: Post[] = [
     slug: "a-lovely-green-city-new-york",
     image:
       "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixid=MnwzODU2NTF8MHwxfHNlYXJjaHw2fHxOZXclMjBZb3J8ZW58MHx8fHwxNjcwMjUzMzMw&ixlib=rb-4.0.3",
-    body: "New York is a city in the United States of America. It is the most populous city in the United States.",
+    body: "New York is a city in the United States of America. It is the most populous city in the United States.New York is a city in the United States of America.",
     date_created: "2021-07-01T00:00:00.000Z",
     date_updated: "2021-07-01T00:00:00.000Z",
   },

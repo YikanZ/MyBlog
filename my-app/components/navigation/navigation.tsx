@@ -11,7 +11,7 @@ const Navigation = () => {
                         <nav>
                             <ul className="flex items-center gap-4 text-neutral-600">
                                 <li>
-                                    <Link href="/cites">Cities</Link>
+                                    <Link href="/cities">Cities</Link>
                                 </li>
                                 <li>
                                     <Link href="/experiences">Experiences</Link>
