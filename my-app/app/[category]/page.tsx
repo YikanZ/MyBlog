@@ -1,10 +1,25 @@
-import { DUMMY_POSTS } from "@/public/DUMMY_DATA";
+import { DUMMY_POSTS, DUMMY_CATEGORIES } from "@/public/DUMMY_DATA";
+import PaddingContainer from "@/components/layout/padding-container";
+import PostList from "@/components/post/post-lists";
+
+export const generateStaticParams = async () => {
+    return DUMMY_CATEGORIES.map((category) => {
+        return {
+            category:category.slug,
+        };
+    });
+};
 
 const Page = ({ params }: { params: { category: string }}) => {
 
     const posts = DUMMY_POSTS.filter((post) => post.category.title.toLocaleLowerCase() === params.category);
-    return <div>{JSON.stringify(posts)}</div>
+    return (
+     <PaddingContainer>
+        <PostList posts={posts} />
+     </PaddingContainer>   
+    )
 };
 
 export default Page;
 
+ 
