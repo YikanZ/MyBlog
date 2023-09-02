@@ -20,7 +20,7 @@ const PostCard = ( { post, layout = "horizontal", reverse = false }: PostProps )
 
               href={`/post/${post.slug}`}>
            {/* image */}
-           <Image className={`rounded-md w-full object-cover object-center max-h-[300px] 
+           <Image className={`rounded-md w-full object-cover object-center  h-full max-h-[300px] 
                 ${reverse ? 
                     "md:order-last" 
                     : ""}` }
