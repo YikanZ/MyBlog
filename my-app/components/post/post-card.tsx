@@ -25,7 +25,7 @@ const PostCard = ( { post, layout = "horizontal", reverse = false }: PostProps )
                     "md:order-last" 
                     : ""}` }
                   alt={post.title} 
-                  src={post.image} 
+                  src={`${process.env.NEXT_PUBLIC_ASSETS_URL}${post.image}?Key=optimized`} 
                   width={600} 
                   height={300}/>
            {/* content */}

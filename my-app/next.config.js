@@ -7,11 +7,11 @@ const nextConfig = {
                 protocol: "https",
             },
             {
-                hostname: "m.media-amazon.com",
+                hostname:"directus-production-79da.up.railway.app",
                 protocol: "https",
             },
         ]
     }
 };
-
+ 
 module.exports = nextConfig
